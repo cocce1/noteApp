@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {
   View,
   StyleSheet,
-  Modal,
-  Text,
+  Modal, 
   StatusBar,
   TextInput,
   TouchableWithoutFeedback,
@@ -16,8 +15,10 @@ const NoteInputModal = ({ visible, onClose, onSubmit, note, isEdit }) => {
   const [title, setTitle] = useState('');
   const [desc, setDesc] = useState('');
   const handleModalClose = () => {
-    Keyboard.dismiss();
+     Keyboard.dismiss();
   };
+
+ 
 
   useEffect(() => {
     if (isEdit) {
@@ -54,7 +55,7 @@ const NoteInputModal = ({ visible, onClose, onSubmit, note, isEdit }) => {
 
   return (
     <>
-      <StatusBar hidden />
+    <StatusBar barStyle='dark-content' backgroundColor={colors.LIGHT} />
       <Modal visible={visible} animationType='fade'>
         <View style={styles.container}>
           <TextInput

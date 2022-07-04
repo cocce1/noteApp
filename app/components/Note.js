@@ -15,7 +15,7 @@ const Note = ({ item, onPress }) => {
       <Text style={styles.title} numberOfLines={2}>
         {title}
       </Text>
-      <Text numberOfLines={3}>{desc}</Text>
+      <Text  style ={styles.desc}numberOfLines={3}>{desc}</Text>
     </TouchableOpacity>
   );
 };
@@ -33,7 +33,16 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 16,
     color: colors.LIGHT,
+    marginBottom:3,
+    
   },
+  desc:{
+    fontSize:14,
+    color: colors.LIGHT,
+    
+    
+  }
+
 });
 
 export default Note;

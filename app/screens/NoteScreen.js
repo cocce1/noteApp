@@ -145,10 +145,10 @@ const NoteScreen = ({ user, navigation }) => {
 
 const styles = StyleSheet.create({
   header: {
-    fontSize: 25,
+    fontSize: 20,
     fontWeight: 'bold',
     fontFamily:'monospace',
-    color:colors.PRIMARY
+    color:colors.PRIMARY,
   },
   container: {
     paddingHorizontal: 20,

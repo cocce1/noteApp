@@ -20,7 +20,6 @@ const formatDate = ms => {
 
 const NoteDetail = props => {
   const [note, setNote] = useState(props.route.params.note);
-  //const headerHeight = useHeaderHeight();
   const { setNotes } = useNotes();
   const [showModal, setShowModal] = useState(false);
   const [isEdit, setIsEdit] = useState(false);
@@ -117,7 +116,6 @@ const NoteDetail = props => {
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
     paddingHorizontal: 15,
   },
   title: {

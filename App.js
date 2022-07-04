@@ -16,7 +16,7 @@ const Stack = createStackNavigator();
 
 
 export default function App() {
-  <Text>Hello</Text>
+ 
 
   const [user,setUser] = useState({})
   const [isAppFirstTimeOpen,setIsAppFirstTimeOpen] = useState(false);
